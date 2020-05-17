@@ -197,10 +197,15 @@ namespace L6
                             {
                                 companies = company;
                                 Console.WriteLine("1-Quieres ver la inofrmacion de la empresa?");
+                                Console.WriteLine("2-Volver Atras");
                                 int SeeData = Convert.ToInt16(Console.ReadLine());
                                 if (SeeData == 1)
                                 {
                                     ShowCompamy(companies);
+                                }
+                                else
+                                {
+                                    break;
                                 }
                             }
                             else
