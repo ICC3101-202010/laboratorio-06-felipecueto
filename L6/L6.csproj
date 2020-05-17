@@ -37,6 +37,7 @@
     <Compile Include="Area.cs" />
     <Compile Include="Department.cs" />
     <Compile Include="Section.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Block.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

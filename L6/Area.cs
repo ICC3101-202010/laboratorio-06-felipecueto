@@ -1,10 +1,15 @@
 ﻿using System;
 namespace L6
 {
-    public class Area
+    [Serializable()]
+    public class Area:Division
     {
-        public Area()
+
+        public Area(string disvisioname, Person employee): base (disvisioname,employee)
         {
+            this.employee1 = employee;
+            this.divisioname = disvisioname;
         }
+
     }
 }

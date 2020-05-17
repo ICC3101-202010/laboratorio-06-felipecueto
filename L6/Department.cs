@@ -1,10 +1,14 @@
 ﻿using System;
 namespace L6
 {
-    public class Department
+    [Serializable()]
+    public class Department:Division
     {
-        public Department()
+        public Department(string divisioname, Person employee): base(divisioname, employee)
         {
+            this.employee1 = employee;
+            this.divisioname = divisioname;
         }
+
     }
 }

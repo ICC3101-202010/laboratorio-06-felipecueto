@@ -1,10 +1,14 @@
 ﻿using System;
 namespace L6
 {
-    public class Section
+    [Serializable()]
+    public class Section:Division
     {
-        public Section()
+        public Section(string disvisioname, Person employee):base (disvisioname,employee)
         {
+            this.employee1 = employee;
+            this.divisioname = disvisioname;
         }
+
     }
 }
